@@ -22,7 +22,9 @@ namespace ResalaCharityProject.Utilities
     {
         Medical = 1,
     }
-
+    /// <summary>
+    /// Pending from Ahmed. All types of support 
+    /// </summary>
     public enum ContributionType
     { 
     

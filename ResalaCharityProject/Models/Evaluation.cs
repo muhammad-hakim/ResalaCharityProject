@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace ResalaCharityProject.Models
 {
-    public class Evaluation
+    /// <summary>
+    /// With first evaluation, to insert FamilyProfile and Contributions(s)
+    /// </summary>
+    public class Evaluation : ModelBase
     {
-        public int Id { get; set; }
-     
         public int FamilyId { get; set; }
 
-        public string OldEvaluation { get; set; }
+        public string OldEvaluationDescription { get; set; }
         
-        public string NewEvaluation { get; set; }
+        public string NewEvaluationDescription { get; set; }
 
         public string ReEvaluationReason { get; set; }
 
@@ -22,6 +23,5 @@ namespace ResalaCharityProject.Models
 
         public ResearchStatus Status { get; set; }
 
-        public string Notes { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ResalaCharityProject.Models
 {
-    public class ModelBase
+    public abstract class ModelBase
     {
         [Key]
         public int Id { get; set; }
