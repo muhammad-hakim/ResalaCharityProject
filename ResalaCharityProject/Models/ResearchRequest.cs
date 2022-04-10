@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ResalaCharityProject.Models
 {
-    public class ResearchRequest : ModelBase
+    /// <summary>
+    /// Pending research request 
+    /// </summary>
+    public class ResearchRequest : FamilyBase
     {
         public ResearchStatus Status { get; set; }
         

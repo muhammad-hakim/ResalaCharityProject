@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace ResalaCharityProject.Models
 {
+    /// <summary>
+    /// To confirm from Resala if Assigned Contributions history is required
+    /// </summary>
     public class FamilyContribution : ModelBase
     {
-        public int FamilyId { get; set; }
+        //public int FamilyId { get; set; }
 
-        [ForeignKey("FamilyId")]
-        public FamilyProfile Family { get; set; }
+        //[ForeignKey("FamilyId")]
+        //public FamilyProfile Family { get; set; }
+        public int EvaluationId { get; set; }
+        public Evaluation Evaluation { get; set; }
 
         public int ContribtionId { get; set; }
 
